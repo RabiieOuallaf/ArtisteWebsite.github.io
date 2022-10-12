@@ -66,7 +66,8 @@ nav .navbar li
 {
     opacity: 0.7;
     transform: translateY(-10%);
-    transition: opacity transform 1s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+
     
 }
 .slidebar .middleImg
@@ -147,3 +148,98 @@ q
 {
     align-items: center;
 }
+
+/* Start media query */
+
+@media all and (max-width : 390px){
+    nav
+    {
+        max-width: 490px;
+    }
+
+    .slidebar
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 4.3rem;
+        margin-bottom: 10rem;
+        margin-left: 0.1rem;
+    }
+    .slidebar img
+    {
+        width: 33vw;
+        height: 33vh;
+        display: flex;
+        margin: 0.9rem;
+        box-shadow: 0 0 4px 0.7px  rgb(255, 153, 51);
+        border-radius: 1.5rem;
+        cursor: pointer;
+    }
+    .slidebar .leftImg 
+    {
+        display: none;
+    }
+    .slidebar .rightImg
+    {
+        display: none;
+    }
+    .testemonials img 
+    {
+        width: 5.5rem;
+        height: 5.5rem;
+        margin-left: 2.2rem;
+        margin-bottom: -1.5rem;
+        border-radius: 8rem;
+        border: solid 0.1rem white;
+        box-shadow: 0 0 4px 0.7px  rgb(255, 153, 51);
+        z-index: 2;
+    }
+    .avis
+    {
+        margin-top: 0;
+        width: 165px;
+        height: 180px;
+        margin-block: 5px;
+        background-image: url("img/6.jpg");
+        filter: blur(8px);
+    }
+    #search 
+    {
+        display: none;
+    }
+    #HumbergerBtn
+    {
+        display: block !important;
+    }
+    #Navbar{
+        display: none;
+    }
+    .testemonials p 
+    {
+        color: white;
+        text-align: center;
+        margin-left: 2rem;
+        font-weight: 700;
+        font-size: large;
+        z-index: 2;
+    }
+    .Second_Profile
+    {
+        display: flex;
+        flex-direction:column;
+        margin-top: -3rem;
+    }
+    .Me_Profile
+    {
+        display: flex;
+        flex-direction: column;
+        margin-right: 5rem;
+    }
+    .Third_Profile
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5rem;
+    }
+}
+
